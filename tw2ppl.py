@@ -37,7 +37,7 @@ def addPerson(args):
     if argLen < 3:
         printUsage(addPersonUsage)
         return
-    p = readSaveFile(saveFile)
+    people = readSaveFile(saveFile)
 
     p = Person()
     p.ingame = args[0]

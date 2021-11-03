@@ -78,7 +78,7 @@ def addMoment(args):
     cmd = args[0]
     args = args[1:]
     argLen = len(args)
-    if argLen < 1:
+    if argLen < 2:
         printUsage(momentUsage)
         return
 
@@ -95,6 +95,8 @@ def addMoment(args):
         people[nickname].sharedMoments.append(moment)
     except:
         print(personNotFound)
+
+    writeSaveFile(saveFile, people)
 
     nickname = args[0]
 

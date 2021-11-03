@@ -101,7 +101,7 @@ def addMoment(args):
     nickname = args[0]
 
 if __name__ == "__main__":
-
+    os.chdir(os.path.dirname(sys.argv[0]))
     args = sys.argv
     
     argDictionary = {}

@@ -31,7 +31,7 @@ class Person(dictable):
     def prettyPrint(self):
         print("Kullanıcı Adı:  \t",self.ingame)
         print("Gerçek Adı:     \t",self.name)
-        print("Yaş:            \t",self.ingame)
+        print("Yaş:            \t",self.age)
         print("İlk Görünen Yer:\t",self.firstSeenWorld)
         print("Lokasyon:       \t",self.location)
         print("İş:             \t",self.job)
